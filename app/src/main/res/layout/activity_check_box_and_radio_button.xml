@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBoxAndRadioButtonActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ck_layout">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Java Programing"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/ck_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="default"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C# programing"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VB Programing"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Programing"
+        android:checked="true"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/genderGroup"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ck_layout">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femal"
+
+            android:onClick="onRadioGenderClicked"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+
+            android:onClick="onRadioGenderClicked"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genderGroup"
+        android:orientation="vertical">
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="off"
+            android:textOn="on"
+           
+
+            android:id="@+id/btnToggle"/>
+        <Switch
+            android:id="@+id/btnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="auto play"/>
+    </LinearLayout>
+</RelativeLayout>
